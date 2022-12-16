@@ -1,0 +1,33 @@
+.product__countdown {
+  padding: 3rem 0 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  img {
+    width: 220px;
+    display: flex;
+    align-self: flex-end;
+  }
+  h4 {
+    font-weight: normal;
+  }
+  .clock__wrapper {
+    display: flex;
+    align-items: center;
+    .clock__data {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  .store__btn {
+    all: unset;
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

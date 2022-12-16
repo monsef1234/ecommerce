@@ -1,0 +1,14 @@
+.common__section {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../../assets/images/table.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 65%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-weight: 600;
+    color: #fff;
+  }
+}

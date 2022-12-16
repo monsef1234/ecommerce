@@ -1,0 +1,39 @@
+.product__item {
+  .product__img {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  .product__info {
+    text-transform: capitalize;
+    h3 {
+      color: var(--heading-text-color);
+      font-weight: 600;
+    }
+    span {
+      color: var(--small-text-color);
+    }
+    a {
+      color: inherit;
+    }
+  }
+  .product__price {
+    font-size: 1.2rem;
+
+    .add__btn {
+      background-color: var(--primary-color);
+      width: 30px;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

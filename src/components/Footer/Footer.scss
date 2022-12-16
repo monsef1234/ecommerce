@@ -1,0 +1,44 @@
+footer {
+  padding: 3rem 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  .footer__info {
+    padding-right: 2.5rem;
+
+    .logo {
+      padding-bottom: 1rem;
+      span {
+        color: #fff !important;
+      }
+    }
+    p {
+      color: #fff !important;
+      line-height: 1.7rem;
+    }
+  }
+  .footer__info {
+    p {
+      padding: 0.5rem 0;
+    }
+  }
+  .footer__links {
+    text-transform: capitalize;
+    .footer__title {
+      padding-bottom: 1rem;
+    }
+    ul {
+      li {
+        background-color: transparent;
+        p {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+        }
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

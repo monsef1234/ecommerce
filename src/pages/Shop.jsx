@@ -22,6 +22,7 @@ const Shop = () => {
     const { value } = eo.target;
     setSearch(value);
   };
+
   const optionsHandler = () => {
     let productsArr = [...products];
     if (category !== "all") {

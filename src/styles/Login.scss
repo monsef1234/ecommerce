@@ -1,0 +1,30 @@
+section {
+  padding: 3rem 0;
+  form {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 5px;
+    input {
+      &:focus {
+        box-shadow: 0 0 0 0 !important;
+        border: none;
+        outline: none;
+      }
+    }
+    button {
+      all: unset;
+      margin: 0 auto;
+      background-color: #fff;
+      color: var(--primary-color);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    p {
+      a {
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

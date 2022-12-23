@@ -55,9 +55,6 @@ const Shop = () => {
             </Col>
             <Col lg="9">
               <div className="search__section">
-                <div>
-                  <h5>sort by</h5>
-                </div>
                 <div className="search">
                   <input
                     onChange={searchHandler}

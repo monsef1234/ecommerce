@@ -1,0 +1,36 @@
+.cart__section {
+  padding: 3rem 0;
+  table {
+    text-transform: capitalize;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--small-text-color);
+  }
+  td {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .total__wrapper {
+    text-transform: capitalize;
+    .total {
+      span {
+        font-weight: 600;
+        font-size: 1.7rem;
+      }
+    }
+    button {
+      all: unset;
+      display: block;
+      background-color: var(--primary-color);
+      color: #fff;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+}

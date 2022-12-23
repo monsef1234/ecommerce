@@ -1,50 +1,63 @@
 .product__details {
-    padding: 3rem 0;
-    .img {
-        img {
-            width: 100%;
-        }
+  padding: 3rem 0;
+  .img {
+    img {
+      width: 100%;
     }
-    .details {
-        h2 {
-            text-transform: capitalize;
-            color: var(--primary-color);
-            font-weight: 600;
-        }
-        .rating__wrapper {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            .stars {
-                color: coral;
-            }
-            .rating {
-                font-weight: 500;
-                span {
-                    color: coral;
-                }
-            }
-        }
-        .price {
-            font-size: 1.6rem;
-            font-weight: 500;
-        }
-        .btn__add {
-            all: unset;
-            background-color: var(--primary-color);
-            color: #fff;
-            text-transform: capitalize;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+  }
+  .details {
+    h2 {
+      text-transform: capitalize;
+      color: var(--primary-color);
+      font-weight: 600;
     }
+    .rating__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      .stars {
+        color: coral;
+      }
+      .rating {
+        font-weight: 500;
+        span {
+          color: coral;
+        }
+      }
+    }
+    .price {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    .btn__add {
+      all: unset;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-transform: capitalize;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
 
-    .options__wrapper {
-        h4 {
-            cursor: pointer;
-        }
+  .options__wrapper {
+    margin-top: 2rem;
+    h4 {
+      cursor: pointer;
     }
+  }
+  .review__wrapper {
+    .review__content {
+      border-bottom: 1px solid coral;
+      width: fit-content;
+      margin-bottom: 1rem;
+      .rating {
+        color: coral;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }

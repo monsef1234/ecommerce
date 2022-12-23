@@ -18,11 +18,11 @@ header {
     align-items: center;
     justify-content: space-between;
     text-transform: capitalize;
+    transition: 0.5s;
     .nav__links {
       &.mobile__active {
         opacity: 1;
         visibility: visible;
-
         z-index: 999;
         .menu {
           transform: translateX(0%);
@@ -45,7 +45,7 @@ header {
         align-items: center;
         gap: 1.5rem;
         @media screen and ((max-width: 768px)) {
-          transition: 0.5s 0.5s;
+          transition: 0.5s 0.1s;
           transform: translateX(100%);
           position: absolute;
           flex-direction: column;

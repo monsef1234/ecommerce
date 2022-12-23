@@ -21,7 +21,8 @@ root.render(
           closeOnClick
           pauseOnFocusLoss
           pauseOnHover={false}
-          theme="light"
+          hideProgressBar={true}
+          theme="dark"
         />
         <App />
       </Provider>

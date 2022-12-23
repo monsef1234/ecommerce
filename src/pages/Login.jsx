@@ -1,11 +1,28 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Form, FormGroup, Input, Container, Row, Col } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
+import {signInWithEmailAndPassword } from "firebase/auth"
 import "../styles/Login.scss";
+import { auth } from "../firebase.config";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { logIn } from "../store/authSlice";
 const Login = () => {
+  const dispatch = useDispatch()
   const [email, setEmail] = useState("");
   const [passowrd, setPassowrd] = useState("");
+  const navigate = useNavigate()
+    const loginHandler = (eo) => {
+    eo.preventDefault()
+    signInWithEmailAndPassword(auth, email, passowrd).then((useCredential) => {
+      const user = useCredential.user
+      dispatch(logIn(user))
+      navigate("/")
+    }).catch((error) => {
+      toast.error("Wrong email or password ")
+    })
+  }
   return (
     <Helmet title={"Login"}>
       <section>
@@ -13,11 +30,11 @@ const Login = () => {
           <Row>
             <Col lg="6" className="m-auto text-center">
               <h1 className="fw-600 fs-1 text-capitalize mb-3">login</h1>
-              <Form>
+              <Form onSubmit={loginHandler}>
                 <FormGroup>
                   <Input
                     type="email"
-                    required
+                    
                     autoComplete="off"
                     placeholder="Enter Your Email"
                     className="fs-5"
@@ -28,7 +45,7 @@ const Login = () => {
                 <FormGroup>
                   <Input
                     type="password"
-                    required
+                    
                     autoComplete="off"
                     placeholder="Enter Your Password"
                     className="fs-5"
